@@ -1,0 +1,58 @@
+fmatch
+.matched
+.wrap
+.Any
+.old_matched
+
+list_ -> fmatch  -> [2,+(wrap([Int])*Any), [Any]*4 and fmatch(matched.len < old_matched[-1].len)  ] (1)
+matches [2, 3,5,8,9,1, [1,2,3,4]]
+
+*(wrap([Int])*Any) => *(wrap([Int]).times(Any))
+
+list_ -> fmatch  -> [2,Any, wrap(int)*4 and (matched[0]*2 > 5 or all([m >6 for m in matched]) ] -> _, a, b
+
+
+list_ -> fmatch  -> [2,Any*Any,5]
+
+basically need a mock object of sorts which stores everything, tries to stop evaluation, so that invalid (wrt types,values) ones work. invalid syntax still wont work.
+
+
+macros in python
+
+pass in a string or function, have a great pattern matching like lisp and then do your own stuff ( like http://stackoverflow.com/questions/267862/what-makes-lisp-macros-so-special#4621882 )
+
+look for reaasembler in python
+
+(1) -> [2, multi_0, list(Any,Any,Any,Any)]
+
+
+wrap([Int]) = wrap_obj(data =[Int])
+creates wrap_obj with data = param and ops =[]
+if ops are applied store them
+apply right then correctly or later (???)
+
+
+
+(wrap([Int, Float])*Any) = wrap_obj(data =[Int, Float], ops =[__mult__:Any])
+if ops[__mult__] is Any and data is list:
+ this == wrap_obj(data =[ wrap_multi_obj(data = [Int, Float],multi = Any, ops =None) ], ops =None)
+if (data not list):
+    # eg 2
+    try normal __mult__ anyway
+if ops[__mult__] is not Any:
+    # eg [2,3]*5
+    try normal __mult__ anyway
+
+
+wrap(Float).times(Any) == wrap_multi_obj(data = [Float],multi = Any, ops =None)
+wrap([2,3.0]).times(Any) == wrap_multi_obj(data = [[2,3.0]],multi = Any, ops =None)
+.times means the whole thing will repeat n times
+first doing all ops and, replace wrap_obj with wrap_multi_obj putting new data=[data]
+to repeat multiple items sequentially -> (2,3) say n times as in 2,3,2,3,2,3,.. do +(wrap([2,3.0]).times(Any))
+
++(wrap([Int])*Any) == wrap(Int).times(Any)
+== wrap_multi_obj(data = [Int],multi = Any, ops =None)
+if prev is wrap_obj and data is list:
+    removes prev node, and replace with wrap_multi_obj with same data
+
++ is the unwrap op
