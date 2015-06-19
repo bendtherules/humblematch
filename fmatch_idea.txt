@@ -95,11 +95,29 @@ IDEAS TO DO
 
 add more debug info
 debug info or raise custom exception
-allow matches to store in var
 better __repr__ print
+
+allow matches to store in var (done)
 
 add __mult__ alternative to .times (done)
 
-what about dict and object? (dicts ok, )
+what about dict ? (dicts ok, )
 
-maybe dict to obj?
+maybe dict to obj? (done)
+
+save_as in multimatch with list behaviour(done)
+
+Any and OR save_as (done)
+
+test if data == Multi branch, raise error doesnt break anything
+more docs
+
+test integration save_as and times
+
+do smart .times for single value
+
+allow Any with a module.Class(Any), which allows only object - Any
+
+more doctest for other methods and helpers
+
+test helpers

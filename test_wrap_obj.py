@@ -1,4 +1,4 @@
-from wrap_obj import WrapObj as w, Any, OR
+from wrap_obj import WrapObj, Any, OR, w
 import collections
 import pytest
 
@@ -9,7 +9,7 @@ def test_w_single_value():
     assert(w("hello") == "hello")
     assert(w(float("inf")) == float("inf"))
     assert(w(10.23) == 10.23)
-    assert(w("abhas") == u"abhas")
+    # assert(w("abhas") == u"abhas")
 
     assert(w(object()) != object())
     assert(w(5) != "asd")
@@ -29,9 +29,9 @@ def test_w_single_type():
     assert(w(float) == 5.0)
     assert(w(float) == float("inf"))
 
-    assert(w(int) == int)
-    assert(w(float) == float)
-    assert(w(TypeError) == TypeError)
+    assert(w(int) != int)
+    assert(w(float) != float)
+    assert(w(TypeError) != TypeError)
 
     assert(w(int) != 2.33)
     assert(w(int) != "abhas")
@@ -178,3 +178,42 @@ def test_as_obj():
 
     test_obj.b = "qwerty"
     assert(w({"a": int, "b": Any}).as_obj() == test_obj)
+
+
+def test_w_wrapObj():
+    assert(w is WrapObj)
+
+
+def test_save_as():
+    dict_match = (w(int).save_as("a") == 5)
+    assert(dict_match["a"] == 5)
+
+    dict_match = (w([int, w(float).save_as("a")]) == [5, 10.23])
+    assert(dict_match["a"] == 10.23)
+
+    dict_match = (w([w(int), w(float).save_as("a")]) == [5, 10.23])
+    assert(dict_match["a"] == 10.23)
+
+    dict_match = (w([{"what": w(int).save_as("b")}, w(float).save_as("a")]) == [{"what": 5}, 10.23])
+    assert(dict_match["b"] == 5 and dict_match["a"] == 10.23)
+    with pytest.raises(AssertionError):
+        assert(dict_match["b"] == 15)
+    with pytest.raises(AssertionError):
+        assert(dict_match["a"] == 5)
+    with pytest.raises(AssertionError):
+        assert(dict_match["a"] == 10)
+
+    dict_match = (w([{"what": w(int).save_as("a")}, w(float).save_as("a")]) == [{"what": 5}, 10.23])
+    assert(dict_match["a"] == 10.23)
+
+    dict_match = (w([[int, w(int).save_as("b")], float]) == [[5, 99], 10.23])
+    assert(dict_match["b"] == 99)
+
+    dict_match = (w([w(int).save_as("a")]).times(2) == [2, 3])
+    assert(dict_match["a"] != 3)
+    assert(dict_match["a"] == [2, 3])
+
+    dict_match_1 = (w([w([int]).times(2).save_as("b")]) == [5, 12])
+    dict_match_2 = (w([w([int]).save_as("b").times(2)]) == [5, 12])
+    assert(dict_match_1["b"] == [5, 12])
+    assert(dict_match_1 == dict_match_2)
