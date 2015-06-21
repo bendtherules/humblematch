@@ -1,3 +1,5 @@
 site_name: HumbleMatch
 
 theme: cerulean
+
+docs_dir: humblematch/docs

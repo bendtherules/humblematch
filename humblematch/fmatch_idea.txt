@@ -109,6 +109,8 @@ save_as in multimatch with list behaviour(done)
 
 Any and OR save_as (done)
 
+name change to humblematch (done)
+
 test if data == Multi branch, raise error doesnt break anything
 more docs
 
@@ -122,4 +124,3 @@ more doctest for other methods and helpers
 
 test helpers
 
-name change to humblematch

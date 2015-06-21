@@ -7,7 +7,7 @@ Slug: HumbleMatch_Launch
 
 ## Intro
 
-Hi, I am [Abhas](blog.codesp.in) and personally, I love Python mostly for its intuitive, flexible and beautiful API. But some things, I really hate doing. HumbleMatch is my attempt at solving that pain.
+Hi, I am [Abhas](http://blog.codesp.in) and personally, I love Python mostly for its intuitive, flexible and beautiful API. But some things, I really hate doing. HumbleMatch is my attempt at solving that pain.
 
 
 ## The Pain Point #1

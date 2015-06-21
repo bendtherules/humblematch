@@ -1,5 +1,0 @@
-Run doctest -
-python -m doctest .\wrap_obj.py
-
-Run py.test-
-py.test
