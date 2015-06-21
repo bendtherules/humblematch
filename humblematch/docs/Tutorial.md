@@ -235,4 +235,6 @@ Infact now that we know this, in Test 2 we can remove the repetion of `w([float]
 
 I purposedly missed one method which is already there, called `w(obj).save_as(arg_name)`. How it works is that whatever it matches with is stored  as `"arg_name"` and returns a dict filled with all such values, when `==`d with `other`. For eg `w([2, w(int).save_as("a"), OR(str,dict)).save_as("b")]) == [2,5,{"q":1}]` returns `{"a":5,"b":{"q":1}}`. I didnt document it well beacuse I am not mentally ok with a `==` call returning anything other than a `boolean`. Maybe, I will change the API in some way to make it better and document it then. But feel free to also try this, I am proud of this feature :)
 
+I have not yet talked about how it helps duck-typing code till now, but I'll add it soon (there is no more API for it, just need to apply these to objects and use FunctionType as type).
+
 And thats all for now, have fun and write more code.
