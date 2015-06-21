@@ -39,7 +39,7 @@ python setup.py build --plat-name=win32 bdist_wininst
 
 ### To upload to PYPI-
 
-twine upload dist/* -R pypi
+twine upload dist/* -r pypi
 
 ### To build or serve docs
 
