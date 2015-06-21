@@ -4,10 +4,11 @@ from collections import Mapping, Iterable
 from warnings import warn
 import logging
 import types
+import numbers
 
 # logging.debug = print
 
-__all__ = ["Any", "OR", "WrapObj", "w", "WrapMultiObj"]
+__all__ = ["Any", "OR", "WrapObj", "w", "WrapMultiObj", "inf", "StringTypes", "NumberType", "FunctionType", "ClassType"]
 
 
 class MetaAny(type):
@@ -522,6 +523,13 @@ def check_as_value_and_type(to_check, value_or_type):
         return False
 
 w = WrapObj
+
+# some extra constants
+inf = float("inf")
+StringTypes = OR(types.StringTypes)
+NumberType = numbers.Number
+FunctionType = types.FunctionType
+ClassType = types.ClassType
 
 
 # to think and todo
