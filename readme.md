@@ -6,7 +6,7 @@ Will **Sanitize your type-checks and duck-checks** for you
 
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
-More Docs at [projects.codesp.in/humblematch](projects.codesp.in/humblematch)
+More Docs at [projects.codesp.in/humblematch](http://projects.codesp.in/humblematch)
 
 ## What the heck is it?
 
