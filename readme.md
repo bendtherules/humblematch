@@ -2,11 +2,11 @@
 --------------
 Will **Sanitize your type-checks and duck-checks** for you
 
-![HumbleMatch logo](./humblematch/img/logo_medium.png "Yeah, I took that pic :)")
+![HumbleMatch logo](https://raw.githubusercontent.com/bendtherules/humblematch/master/humblematch/docs/img/logo_medium.png "Yeah, I took that pic :)")
 
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
-More Docs at [projects.codesp.in/humblematch](http://projects.codesp.in/humblematch)
+More Docs at [projects.codesp.in/humblematch](http://humblematch.readthedocs.org/en/latest/)
 
 ## What the heck is it?
 
