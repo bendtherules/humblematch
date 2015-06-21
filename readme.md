@@ -4,6 +4,9 @@ Will **Sanitize your type-checks and duck-checks** for you
 
 ![HumbleMatch logo](http://humblematch.readthedocs.org/en/latest/img/logo_medium.png "Yeah, I took that pic :)")
 
+**Install using**
+`pip install humblematch`
+
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
 More Docs at [projects.codesp.in/humblematch](http://humblematch.readthedocs.org/en/latest/)
@@ -22,7 +25,7 @@ HumbleMatch is made to *add a zing* to your mundane type-checking and duck-check
 
 ### Run doctest -
 
-python -m doctest .\wrap_obj.py
+python -m doctest .\humblematch\wrap_obj.py
 
 ### Run tests-
 cd humblematch
@@ -36,7 +39,7 @@ python setup.py build --plat-name=win32 bdist_wininst
 
 ### To upload to PYPI-
 
-twine upload dist/*
+twine upload dist/* -R pypi
 
 ### To build or serve docs
 
