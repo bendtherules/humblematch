@@ -6,6 +6,7 @@ Will **Sanitize your type-checks and duck-checks** for you
 
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
+More Docs at [](projects.codesp.in/humblematch)
 
 ## What the heck is it?
 
@@ -15,7 +16,6 @@ HumbleMatch is made to *add a zing* to your mundane type-checking and duck-check
 * Or just *sprinkle some assert* checks to ensure the data is what you expect it to be at any point.
 * Provide helpful debugging errors, *dont just fail with cryptic errors*
 
-More Docs at projects.codesp.in/humblematch
 
 ## Get Running
 --------------

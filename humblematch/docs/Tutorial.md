@@ -1,9 +1,3 @@
-Title: HumbleMatch - Go sanitize your type-checking
-Date: 2015-06-19 16:56
-Authors: bendtherules
-Category: Projects
-Tags: HumbleMatch, Launch stuff, Projects
-Slug: HumbleMatch_Launch
 
 ## Intro
 
