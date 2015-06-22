@@ -7,6 +7,7 @@ Will **Sanitize your type-checks and duck-checks** for you
 **Install using**
 `pip install humblematch`
 
+Github Repo at [github.com/bendtherules/humblematch](http://github.com/bendtherules/humblematch)
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
 More Docs at [projects.codesp.in/humblematch](http://humblematch.readthedocs.org/en/latest/)
