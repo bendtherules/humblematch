@@ -28,4 +28,4 @@ This is the only typechecking code you'll need for valid arguments.
     from humblematch import w
     assert( w([int, int]) == [x, y] or w([[int, int], None]) == [x, y] )
 
-If you like it, please move to the [Tutorials](./tutorial). Its a bit long, but that all the documentation youll need to know.
+If you like it, please move to the [Tutorials](./Tutorial). Its a bit long, but that all the documentation youll need to know.
