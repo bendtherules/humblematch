@@ -3,6 +3,9 @@ Will **Sanitize your type-checks and duck-checks** for you
 
 ![HumbleMatch logo](./img/logo_medium.png "Yeah, I took that pic :)")
 
+**Install using**
+`pip install humblematch`
+
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
 

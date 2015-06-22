@@ -124,3 +124,27 @@ more doctest for other methods and helpers
 
 test helpers
 
+
+todo link
+---------
+
+@raymondh HumbleMatch at PyPi - Lets you turn complex checks into one-liners. I like your one-liners, what do you think of this?
+
+twitter ImportPython Newsletter
+
+Pycoders weekly web (done)
+
+Python Weekly (tweeted)
+
+rssheap (todo)
+
+ALSO, reddit, hacker news, python mailing list
+
+Publicity
+---------
+HumbleMatch at PyPi ( https://github.com/bendtherules/humblematch ).
+
+helps you to do easy intuitive type-checking for lists,
+objects, etc. Turns complex checks into one-liners.
+
+Docs are here - http://humblematch.readthedocs.org/en/latest/
