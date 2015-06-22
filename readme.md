@@ -11,7 +11,7 @@ Github Repo at [github.com/bendtherules/humblematch](http://github.com/bendtheru
 
 Available at [HumbleMatch@pypi](https://pypi.python.org/pypi/humblematch)
 
-More Docs at [projects.codesp.in/humblematch](http://humblematch.readthedocs.org/en/latest/)
+More Docs at [humblematch.readthedocs.org](http://humblematch.readthedocs.org/en/latest/) 
 
 ## What the heck is it?
 
