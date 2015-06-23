@@ -276,4 +276,4 @@ target/
 *.pypirc
 MANIFEST
 
-humblematch/fmatch_idea.txt
+fmatch_idea.txt
