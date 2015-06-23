@@ -148,3 +148,6 @@ helps you to do easy intuitive type-checking for lists,
 objects, etc. Turns complex checks into one-liners.
 
 Docs are here - http://humblematch.readthedocs.org/en/latest/
+
+Other ideas
+---------
