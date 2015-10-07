@@ -25,7 +25,7 @@ class PyTest(TestCommand):
 setup(
     name='humblematch',
     packages=['humblematch'],  # this must be the same as the name above
-    version='0.1.dev3',
+    version='0.1.1',
     description='Will Sanitize your type-checks and duck-checks for you',
     author='bendtherules',
     author_email='bendtherules@codesp.in',
