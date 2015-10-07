@@ -36,7 +36,9 @@ py.test
 ### To build code - 
 
 python setup.py sdist bdist_wheel
+
 python setup.py build --plat-name=win-amd64 bdist_wininst
+
 python setup.py build --plat-name=win32 bdist_wininst
 
 ### To upload to PYPI-
